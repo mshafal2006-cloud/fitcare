@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FITCARE | Weight Loss Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">FIT<span>CARE</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+
+<section class="hero small-hero">
+  <h1>Weight Loss Plan</h1>
+  <p>Workout + Healthy Food Guide</p>
+</section>
+
+<!-- Workout Plan -->
+<section class="about">
+  <h2>🔥 Daily Workout Plan</h2>
+
+  
+  <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" class="page-img">
+
+  <p><b>Morning (20–30 min)</b></p>
+  <ul>
+    <li>Jumping Jacks – 3 sets</li>
+    <li>High Knees – 2 sets</li>
+    <li>Skipping / Fast Walking – 10 min</li>
+  </ul>
+
+  <p><b>Evening (20 min)</b></p>
+  <ul>
+    <li>Squats – 15 × 3</li>
+    <li>Pushups – 10 × 3</li>
+    <li>Plank – 30 sec × 3</li>
+  </ul>
+</section>
+
+<!-- Food Plan -->
+<section class="tips">
+  <h2>🥗 Healthy Food Plan</h2>
+
+  <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352" class="page-img">
+
+  <p><b>Breakfast</b></p>
+  <ul>
+    <li>Oats / Idli + Sambar</li>
+    <li>1 Boiled Egg / Fruits</li>
+  </ul>
+
+  <p><b>Lunch</b></p>
+  <ul>
+    <li>Rice (small portion)</li>
+    <li>Vegetables + Dal</li>
+    <li>Fish / Chicken (grilled)</li>
+  </ul>
+
+  <p><b>Dinner</b></p>
+  <ul>
+    <li>Chapathi + Veg curry</li>
+    <li>Salad</li>
+  </ul>
+
+  <p><b>Avoid:</b> Sugary drinks, bakery items, fried food</p>
+</section>
+<!-- Weight Tracker -->
+<section class="about">
+  <h2>📉 Weight Tracker</h2>
+  <p>Track your daily weight and see your progress</p>
+
+  <div class="tracker-box">
+    <input type="number" id="weightInput" placeholder="Enter your weight (kg)">
+    <button onclick="addWeight()">Add Weight</button>
+  </div>
+
+  <h3>Your Records</h3>
+  <ul id="weightList"></ul>
+</section>
+<!-- Weight Graph -->
+<section class="about">
+  <h2>📊 Weight Progress Chart</h2>
+  <canvas id="weightChart" width="400" height="200"></canvas>
+</section>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
