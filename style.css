@@ -1,0 +1,229 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background:#f9f9f9;
+  color:#333;
+}
+
+/* Navbar */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:white;
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+  font-size:24px;
+  font-weight:700;
+}
+.logo span{
+  color:#2ecc71;
+}
+
+nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+  transition:0.3s;
+}
+nav a:hover{
+  color:#2ecc71;
+}
+
+/* Hero */
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+  url("https://images.unsplash.com/photo-1544367567-0f2fcb009e0b");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.hero-content{
+  animation:fadeUp 1.5s ease;
+}
+
+.hero h1{
+  font-size:48px;
+}
+.hero span{
+  color:#2ecc71;
+}
+.hero p{
+  margin:20px 0;
+  font-size:18px;
+}
+
+.hero button{
+  padding:12px 30px;
+  border:none;
+  background:#2ecc71;
+  color:white;
+  font-size:16px;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.hero button:hover{
+  background:#27ae60;
+}
+
+/* Sections */
+section{
+  padding:80px 60px;
+  text-align:center;
+}
+
+.about, .tips, .contact{
+  background:white;
+  margin:40px;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  animation:fadeUp 1s ease;
+}
+
+.services{
+  background:transparent;
+}
+
+.service-box{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+.card{
+  background:white;
+  padding:30px;
+  width:200px;
+  height:120px;              /* 🔥 FIXED HEIGHT */
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  font-size:18px;
+  transition:0.4s;
+
+  display:flex;              /* 🔥 CENTER TEXT */
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:#2ecc71;
+  color:white;
+}
+
+/* Animation */
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+.card-link{
+  text-decoration:none;
+  color:inherit;
+}
+
+.small-hero{
+  height:60vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url("https://images.unsplash.com/photo-1571019613914-85f342c55f33");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.page-img{
+  width:100%;
+  max-width:600px;
+  border-radius:15px;
+  margin:20px 0;
+}
+
+ul{
+  text-align:left;
+  max-width:600px;
+  margin:10px auto;
+}
+ul li{
+  margin:8px 0;
+}
+.tracker-box{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:20px 0;
+}
+
+.tracker-box input{
+  padding:10px;
+  width:200px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.tracker-box button{
+  padding:10px 20px;
+  background:#2ecc71;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.tracker-box button:hover{
+  background:#27ae60;
+}
+
+#weightList{
+  list-style:none;
+  max-width:400px;
+  margin:20px auto;
+  padding:0;
+}
+
+#weightList li{
+  background:#f4f4f4;
+  margin:8px 0;
+  padding:10px;
+  border-radius:8px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  animation:fadeUp 0.5s ease;
+}
+canvas{
+  max-width:600px;
+  margin:30px auto;
+  display:block;
+}
